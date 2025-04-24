@@ -21,6 +21,8 @@ SECRET_KEY = "django-insecure-$-6!wh_&rp4+thd2okhke115=6+#pcp22owdtz@m*ii)l#o1tz
 
 DEBUG = True
 
+CSRF_TRUSTED_ORIGINS=["https://nava-api-production.up.railway.app"]
+
 
 
 SWAGGER_SETTINGS = {
