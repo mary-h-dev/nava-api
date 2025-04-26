@@ -47,7 +47,7 @@ urlpatterns = ([
     path('cart/', include('cart.urls')),
     path('podcast/', include('podcast.urls')),
     path('psychotest/', include('Psychological_test.urls')),
-    # path('landing_page/', include('landing_manager.urls')),
+    path('landing_page/', include('landing_manager.urls')),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

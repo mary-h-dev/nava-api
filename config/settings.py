@@ -39,7 +39,7 @@ SWAGGER_SETTINGS = {
 }
 
 
-
+ALLOWED_IPS =['*']
 
 # ALLOWED_IPS = [
 #     "127.0.0.1",    
@@ -70,7 +70,7 @@ INSTALLED_APPS = [
     'vlog',
     'appointment',
     'podcast',
-    # 'landing_manager',
+    'landing_manager',
     'Psychological_test',
     'Psychology_workshops',
     #installations
@@ -94,7 +94,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "corsheaders.middleware.CorsMiddleware",
-    # "landing_manager.api.v1.middleware.RestrictIPMiddleware",
+    "landing_manager.api.v1.middleware.RestrictIPMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
