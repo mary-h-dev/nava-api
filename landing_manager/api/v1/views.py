@@ -5,7 +5,7 @@ from rest_framework import status, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
-from Hamaram.permissions import AdminAssistantOrIsAdminOrIsSupporter
+from config.permissions import AdminAssistantOrIsAdminOrIsSupporter
 from landing_manager.api.v1.serializers import SubmissionLandingPageSerializer, LandingPageSerializers, \
     CampaignPageSerializers
 from landing_manager.models import LandingPage, SubmissionLandingPage, Campaign
